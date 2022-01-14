@@ -13,7 +13,7 @@
   "bugs": "https://github.com/dnb-org/dnb-hugo-pwa/issues",
   "devDependencies": {
     "@dnb-org/remark-config": "^3.4.2",
-    "@dnb-org/standard-version-config": "^3.4.1",
+    "@dnb-org/standard-version-config": "^3.4.8",
     "@dnb-org/tools": "^3.4.1",
     "webpack": "^5.64.4",
     "webpack-cli": "^4.9.1",
