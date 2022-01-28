@@ -16,7 +16,7 @@
     "@dnb-org/standard-version-config": "^3.4.1",
     "@dnb-org/tools": "^3.4.1",
     "webpack": "^5.64.4",
-    "webpack-cli": "^4.9.1",
+    "webpack-cli": "^4.9.2",
     "workbox-cacheable-response": "^6.4.2",
     "workbox-core": "^6.4.2",
     "workbox-expiration": "^6.4.2",
