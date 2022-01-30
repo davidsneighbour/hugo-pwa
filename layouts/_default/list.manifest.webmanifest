@@ -5,12 +5,12 @@ see
 */ -}}
 {{- $config := merge (dict
         "name" site.Title
-        "short_name" ($config.short_name | default site.Title))
-        "theme_color" ($config.theme_color | default "#ffffff"))
-        "background_color" ($config.background_color | default "#ffffff")
-        "display" ($config.display | default "minimal-ui")
-        "start_url" ($config.start_url | default "/?source=pwa")
-        "description" ($config.description | default site.Params.Description)
+        "short_name" site.Title
+        "theme_color" "#ffffff"
+        "background_color" "#ffffff"
+        "display" "minimal-ui"
+        "start_url" "/?source=pwa"
+        "description" site.Params.Description
       ) (site.Params.dnb.pwa | default dict)
 -}}
 {{- $manifest := $config -}}
