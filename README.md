@@ -22,37 +22,54 @@ This is work in progress and while many parts are already working, some changes 
 - :x: improve configuration of implemented functionality in the service worker
 - :x: add detailed documentation for all configuration options
 
+<!--- THINGSTOKNOW BEGIN --->
+
+## Some things you need to know
+
+These are notes about conventions in this README.md. You might want to make yourself acquainted with them if this is your first visit.
+
+<details>
+
+<summary>:heavy_exclamation_mark: A note about proper configuration formatting. Click to expand!</summary>
+
+The following documentation will refer to all configuration parameters in TOML format and with the assumption of a configuration file for your project at `/config.toml`. There are various formats of configurations (TOML/YAML/JSON) and multiple locations your configuration can reside (config file or config directory). Note that in the case of a config directory the section headers of all samples need to have the respective section title removed. So `[params.dnb.something]` will become `[dnb.something]` if the configuration is done in the file `/config/$CONFIGNAME/params.toml`.
+
+</details>
+<!--- THINGSTOKNOW END --->
+
+<!--- INSTALLUPDATE BEGIN --->
+
 ## Installing
 
-### Setup module and output formats
-
-First, if not already done, enable modules in your _own_ repository:
+First enable modules in your own repository:
 
 ```bash
 hugo mod init github.com/username/reponame
 ```
 
-Then add this module to your required modules in `config.toml`:
+Then add this module to your required modules in config.toml.
 
 ```toml
 [module]
 
 [[module.imports]]
 path = "github.com/dnb-org/dnb-hugo-pwa"
-disabled = false
 
 ```
 
-or in `config/_default/module.toml`:
+The next time you run `hugo` it will download the latest version of the module.
 
-```toml
-[[imports]]
-path = "github.com/dnb-org/dnb-hugo-pwa"
-disabled = false
+## Updating
 
+```shell
+# update this module
+hugo mod get -u github.com/dnb-org/dnb-hugo-pwa
+# update all modules
+hugo mod get -u ./...
 ```
+<!--- INSTALLUPDATE END --->
 
-The next time you run `hugo` it will download the latest version of this module.
+## Configuration
 
 To make this component work you need to add the manifest to your _home_ output formats in `config.toml`:
 
@@ -107,29 +124,37 @@ hugo mod get -u # update all modules
 
 <!--- COMPONENTS BEGIN --->
 
----
+## Other [GoHugo](https://gohugo.io/) components by [@dnb-org](https://github.com/dnb-org/)
 
-## lastmod: '2021-11-28T01:29:09.514Z'
+<!-- prettier-ignore -->
+| Component | Description |
+| :--- | :--- |
+| [dnb-hugo-auditor](https://github.com/dnb-org/dnb-hugo-auditor) | |
+| [dnb-hugo-debug](https://github.com/dnb-org/dnb-hugo-debug) :mage_man: | Debug EVERYTHING in GoHugo. |
+| [dnb-hugo-errors](https://github.com/dnb-org/dnb-hugo-errors) | A Hugo module that adds more versatile error pages to a site. |
+| [dnb-hugo-feeds](https://github.com/dnb-org/dnb-hugo-feeds) | Implements various configurable feed formats. |
+| [dnb-hugo-functions](https://github.com/dnb-org/dnb-hugo-functions) | A Hugo theme component with helper functions for other projects. |
+| [dnb-hugo-giscus](https://github.com/dnb-org/dnb-hugo-giscus) | The Giscus comment system layout for GoHugo. |
+| [dnb-hugo-head](https://github.com/dnb-org/dnb-hugo-head) | A GoHugo theme component that solves the old question of "What tags belong into the `<head>` tag of my website?" |
+| [dnb-hugo-hooks](https://github.com/dnb-org/dnb-hugo-hooks) | Hooks for GoHugo layouts. An easy way for theme developers to let users add to their themes.  |
+| [dnb-hugo-humans](https://github.com/dnb-org/dnb-hugo-humans) | Your site is made by humans. Humans.txt is naming them. |
+| [dnb-hugo-icons](https://github.com/dnb-org/dnb-hugo-icons) | Icons for your Hugo website. |
+| [dnb-hugo-internals](https://github.com/dnb-org/dnb-hugo-internals) | Better internal templates for GoHugo |
+| [dnb-hugo-netlification](https://github.com/dnb-org/dnb-hugo-netlification) | a collection of tools that optimize your site on Netlify |
+| [dnb-hugo-opensearch](https://github.com/dnb-org/dnb-hugo-opensearch) | configuration for Open Search |
+| [dnb-hugo-pictures](https://github.com/dnb-org/dnb-hugo-pictures) | |
+| [dnb-hugo-pwa](https://github.com/dnb-org/dnb-hugo-pwa) | Turn your site into a Progressive Web Application. Add caching, offline mode and favicon support. |
+| [dnb-hugo-renderhooks](https://github.com/dnb-org/dnb-hugo-renderhooks) | render hooks for Markdown markup |
+| [dnb-hugo-robots](https://github.com/dnb-org/dnb-hugo-robots) | Add a customizable robots.txt to your website. |
+| [dnb-hugo-schema](https://github.com/dnb-org/dnb-hugo-schema) | |
+| [dnb-hugo-search-algolia](https://github.com/dnb-org/dnb-hugo-search-algolia) | |
+| [dnb-hugo-security](https://github.com/dnb-org/dnb-hugo-security) | Add a security.txt to your site with information about your preferred procedures to notify the developer team about security issues. |
+| [dnb-hugo-sitemap](https://github.com/dnb-org/dnb-hugo-sitemap) | |
+| [dnb-hugo-social](https://github.com/dnb-org/dnb-hugo-social) | |
+| [dnb-hugo-workflows](https://github.com/dnb-org/dnb-hugo-workflows) | A collection of Github Actions/Workflows to optimise your work with GoHugo. |
+| [dnb-hugo-youtube](https://github.com/dnb-org/dnb-hugo-youtube) | A shortcode and partial for lite and speedy youtube embeds. |
 
-## Other components in DNB Hugo components
-
-| Component                                                                        | Description                                                |
-| :------------------------------------------------------------------------------- | :--------------------------------------------------------- |
-| [auditor](https://github.com/dnb-org/components/tree/main/auditor)               |                                                            |
-| [functions](https://github.com/dnb-org/components/tree/main/functions)           |                                                            |
-| [internals](https://github.com/dnb-org/components/tree/main/internals)           | Better internal templates for GoHugo                       |
-| [giscus](https://github.com/dnb-org/components/tree/main/giscus)                 | The Giscus comment system layout for GoHugo.               |
-| [netlification](https://github.com/dnb-org/components/tree/main/netlification)   | a collection of tools that optimize your site on Netlify   |
-| [opensearch](https://github.com/dnb-org/components/tree/main/opensearch)         | configuration for Open Search                              |
-| [pwa](https://github.com/dnb-org/components/tree/main/pwa)                       | Automatically turns your site into a PWA                   |
-| [renderhooks](https://github.com/dnb-org/components/tree/main/renderhooks)       | render hooks for Markdown markup                           |
-| [robots](https://github.com/dnb-org/components/tree/main/robots)                 | configure the content of your robots.txt with front matter |
-| [search-algolia](https://github.com/dnb-org/components/tree/main/search-algolia) |                                                            |
-| [search-lunrjs](https://github.com/dnb-org/components/tree/main/search-lunrjs)   |                                                            |
-| [sitemap](https://github.com/dnb-org/components/tree/main/sitemap)               |                                                            |
-| [social](https://github.com/dnb-org/components/tree/main/social)                 |                                                            |
-| [welcomments](https://github.com/dnb-org/components/tree/main/welcomments)       |                                                            |
-
+<!--lint disable no-missing-blank-lines -->
 <!--- COMPONENTS END --->
 
 <!--- ELEMENTS BEGIN --->
