@@ -3,6 +3,7 @@ see
 - https://web.dev/add-manifest/
 - https://maskable.app/editor
 */ -}}
+{{- $config := site.Params.dnb.pwa | default dict -}}
 {{- $manifest := dict -}}
 {{- $manifest = merge $manifest (dict "name" site.Title "short_name" ($config.short_name | default site.Title)) -}}
 {{- $manifest = merge $manifest (dict "theme_color" ($config.theme_color | default "#ffffff")) -}}
