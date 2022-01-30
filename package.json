@@ -12,11 +12,11 @@
   "repository": "dnb-org/dnb-hugo-pwa",
   "bugs": "https://github.com/dnb-org/dnb-hugo-pwa/issues",
   "devDependencies": {
-    "@dnb-org/remark-config": "^3.4.2",
-    "@dnb-org/standard-version-config": "^3.4.1",
-    "@dnb-org/tools": "^3.4.1",
-    "webpack": "^5.64.4",
-    "webpack-cli": "^4.9.1",
+    "@dnb-org/remark-config": "^3.5.2",
+    "@dnb-org/standard-version-config": "^3.5.1",
+    "@dnb-org/tools": "^3.5.1",
+    "webpack": "^5.67.0",
+    "webpack-cli": "^4.9.2",
     "workbox-cacheable-response": "^6.4.2",
     "workbox-core": "^6.4.2",
     "workbox-expiration": "^6.4.2",
@@ -42,7 +42,7 @@
   },
   "slug": "dnb-hugo-pwa",
   "dependencies": {
-    "mem": "^9.0.1",
+    "mem": "^9.0.2",
     "trim": "^1.0.1"
   }
 }
