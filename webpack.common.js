@@ -15,11 +15,11 @@ class FileListPlugin {
             hash: f[f.length - 2]
           };
       }
-      a = JSON.stringify(a);
+      const a2 = JSON.stringify(a);
       // Insert this list into the webpack build as a new file asset:
       compilation.assets['filelist.json'] = {
-        source: () => { return a },
-        size: () => { return a.length }
+        source: () => { return a2 },
+        size: () => { return a2.length }
       };
       callback();
     });
@@ -27,17 +27,11 @@ class FileListPlugin {
 }
 
 module.exports = {
-  mode: 'production',
   target: 'webworker',
   entry: {
     main: path.join(__dirname, 'assets/js', 'service-worker.js'),
   },
   devtool: 'source-map',
-  output: {
-    path: path.resolve(__dirname, 'static'),
-    filename: '[name].[fullhash].js',
-    clean: true,
-  },
   performance: {
     maxEntrypointSize: 100000,
     maxAssetSize: 500000,
@@ -45,6 +39,11 @@ module.exports = {
   },
   plugins: [
     new FileListPlugin(),
+    // https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-webpack-plugin.InjectManifest#InjectManifest
+    // new WorkboxPlugin.InjectManifest({
+    //   swSrc: './service-worker.js',
+    // }),
+    // https://developers.google.com/web/tools/workbox/reference-docs/latest/module-workbox-webpack-plugin.GenerateSW#GenerateSW
     new WorkboxPlugin.GenerateSW({
       clientsClaim: true,
       skipWaiting: true,

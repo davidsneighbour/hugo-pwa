@@ -1,4 +1,3 @@
-{{- $config := site.Data.dnb.pwa.config -}}
 {{- /*
 see
 - https://web.dev/add-manifest/

@@ -16,6 +16,7 @@
     "trim": "^1.0.1"
   },
   "devDependencies": {
+    "@dnb-org/browserslist-config": "^3.5.1",
     "@dnb-org/standard-version-config": "^3.5.1",
     "@dnb-org/tools": "^3.5.1",
     "@dnb-org/webpack-config": "^3.5.2",
@@ -39,6 +40,9 @@
     "serve:webpack": "webpack --watch --config webpack.dev.js"
   },
   "private": true,
+  "browserslist": [
+    "extends @dnb-org/browserslist-config"
+  ],
   "remarkConfig": {
     "plugins": [
       "@dnb-org/remark-config"
