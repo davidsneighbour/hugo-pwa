@@ -11,11 +11,14 @@
   "homepage": "https://github.com/dnb-org/dnb-hugo-pwa",
   "repository": "dnb-org/dnb-hugo-pwa",
   "bugs": "https://github.com/dnb-org/dnb-hugo-pwa/issues",
+  "dependencies": {
+    "mem": "^9.0.2",
+    "trim": "^1.0.1"
+  },
   "devDependencies": {
     "@dnb-org/standard-version-config": "^3.5.1",
     "@dnb-org/tools": "^3.5.1",
-    "webpack": "^5.67.0",
-    "webpack-cli": "^4.9.2",
+    "@dnb-org/webpack-config": "^3.5.2",
     "workbox-cacheable-response": "^6.4.2",
     "workbox-core": "^6.4.2",
     "workbox-expiration": "^6.4.2",
@@ -32,7 +35,8 @@
     "clean:npm": "rimraf node_modules package-lock.json",
     "release": "standard-version --release-as patch -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" && ./bin/release/postrelease",
     "release:major": "standard-version --release-as major -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" && ./bin/release/postrelease",
-    "release:minor": "standard-version --release-as minor -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" && ./bin/release/postrelease"
+    "release:minor": "standard-version --release-as minor -a -t \"v\" --releaseCommitMessageFormat \"chore(release): v{{currentTag}}\" && ./bin/release/postrelease",
+    "serve:webpack": "webpack --watch --config webpack.dev.js"
   },
   "private": true,
   "remarkConfig": {
@@ -40,9 +44,5 @@
       "@dnb-org/remark-config"
     ]
   },
-  "slug": "dnb-hugo-pwa",
-  "dependencies": {
-    "mem": "^9.0.2",
-    "trim": "^1.0.1"
-  }
+  "slug": "dnb-hugo-pwa"
 }
