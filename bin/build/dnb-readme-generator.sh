@@ -6,7 +6,6 @@ REQUIRED_TOOLS=(
   trap
 )
 
-
 for TOOL in "${REQUIRED_TOOLS[@]}"; do
   if ! command -v "${TOOL}" >/dev/null; then
     echo "${TOOL} is required... "
@@ -24,12 +23,6 @@ if [ -f "$FILE" ]; then
   source "${FILE}"
   set +a
 fi
-
-# https://github.com/ozum/replace-between
-node ./node_modules/replace-between/bin/replace-between.js \
-  --source "${TEMPLATEPATH}"/readme/elements.md \
-  --target README.md \
-  --token ELEMENTS
 
 node ./node_modules/replace-between/bin/replace-between.js \
   --source "${TEMPLATEPATH}"/readme/components.md \
