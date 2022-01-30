@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.2](https://github.com/dnb-org/dnb-hugo-pwa/compare/v0.1.1...v0.1.2) (2022-01-30)
+
+
+### Bug Fixes
+
+* proper merging of defaults and local configuration setup ([2c587b8](https://github.com/dnb-org/dnb-hugo-pwa/commit/2c587b8e1aeebcc8ef3035e6591a9ad13240e000))
+
 ### [0.1.1](https://github.com/dnb-org/dnb-hugo-pwa/compare/v0.1.0...v0.1.1) (2022-01-30)
 
 
