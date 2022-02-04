@@ -18,7 +18,7 @@
     "yargs-parser": ">=21.0.0"
   },
   "devDependencies": {
-    "@dnb-org/browserslist-config": "^3.5.1",
+    "@dnb-org/browserslist-config": "^3.5.2",
     "@dnb-org/standard-version-config": "^3.5.1",
     "@dnb-org/tools": "^3.5.1",
     "@dnb-org/webpack-config": "^3.5.2",
