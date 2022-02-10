@@ -2,6 +2,18 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.4](https://github.com/dnb-org/dnb-hugo-pwa/compare/v0.1.3...v0.1.4) (2022-02-10)
+
+
+### Features
+
+* if svg favicon exists then load this too ([f1250f1](https://github.com/dnb-org/dnb-hugo-pwa/commit/f1250f128e40bfec86d43dd0e1088b42c2aabf5d))
+
+
+### Chore
+
+* **deps:** update dependencies ([2aacb56](https://github.com/dnb-org/dnb-hugo-pwa/commit/2aacb56b63acc0e376058a0f5d591d71bb2511b9))
+
 ### [0.1.3](https://github.com/dnb-org/dnb-hugo-pwa/compare/v0.1.2...v0.1.3) (2022-01-30)
 
 
