@@ -15,7 +15,7 @@
     "mem": ">=9.0.2",
     "trim": ">=1.0.1",
     "ansi-regex": ">=6.0.1",
-    "yargs-parser": ">=21.0.0"
+    "yargs-parser": ">=21.0.1"
   },
   "devDependencies": {
     "@dnb-org/browserslist-config": "^3.5.5",
