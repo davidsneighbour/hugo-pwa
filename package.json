@@ -8,9 +8,9 @@
     "email": "patrick@davids-neighbour.com",
     "web": "https://davids-neighbour.com"
   },
-  "homepage": "https://github.com/dnb-org/dnb-hugo-pwa",
-  "repository": "dnb-org/dnb-hugo-pwa",
-  "bugs": "https://github.com/dnb-org/dnb-hugo-pwa/issues",
+  "homepage": "https://github.com/davidsneighbour/hugo-pwa",
+  "repository": "davidsneighbour/hugo-pwa",
+  "bugs": "https://github.com/davidsneighbour/hugo-pwa/issues",
   "dependencies": {
     "mem": ">=9.0.2",
     "trim": ">=1.0.1",
