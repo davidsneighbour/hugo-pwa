@@ -22,7 +22,7 @@
     "@dnb-org/standard-version-config": "^3.5.9",
     "@dnb-org/tools": "^3.5.9",
     "@dnb-org/webpack-config": "^3.5.10",
-    "workbox-cacheable-response": "^6.5.1",
+    "workbox-cacheable-response": "^6.5.3",
     "workbox-core": "^6.5.1",
     "workbox-expiration": "^6.5.1",
     "workbox-precaching": "^6.5.1",
