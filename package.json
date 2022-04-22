@@ -20,7 +20,7 @@
   "devDependencies": {
     "@dnb-org/browserslist-config": "^3.5.10",
     "@dnb-org/standard-version-config": "^3.5.9",
-    "@dnb-org/tools": "^3.5.9",
+    "@dnb-org/tools": "^3.5.10",
     "@dnb-org/webpack-config": "^3.5.10",
     "workbox-cacheable-response": "^6.5.1",
     "workbox-core": "^6.5.1",
