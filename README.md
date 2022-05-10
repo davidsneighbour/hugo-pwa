@@ -1,8 +1,7 @@
 <!--- CARD BEGIN --->
 
-![DNB-Hugo/HEAD](.github/github-card-dark.png#gh-dark-mode-only)
-![DNB-Hugo/HEAD](.github/github-card-light.png#gh-light-mode-only)
-
+![DNB-Hugo/github.com/davidsneighbour/hugo-pwa](.github/github-card-dark.png#gh-dark-mode-only)
+![DNB-Hugo/github.com/davidsneighbour/hugo-pwa](.github/github-card-light.png#gh-light-mode-only)
 <!--- CARD END --->
 
 # DNB GoHugo Component / PWA
@@ -41,19 +40,22 @@ The following documentation will refer to all configuration parameters in TOML f
 
 ## Installing
 
-First enable modules in your own repository:
+First enable modules in your own repository if you did not already have done so:
 
 ```bash
 hugo mod init github.com/username/reponame
 ```
 
-Then add this module to your required modules in config.toml.
+Then add this module to your required modules in `config.toml`.
 
 ```toml
 [module]
 
 [[module.imports]]
-path = "github.com/davidsneighbour/hugo-pwa"
+path = "github.com/davidsneighbour/github.com/davidsneighbour/hugo-pwa"
+disable = false
+ignoreConfig = false
+ignoreImports = false
 
 ```
 
@@ -61,11 +63,11 @@ The next time you run `hugo` it will download the latest version of the module.
 
 ## Updating
 
-```shell
+```bash
 # update this module
-hugo mod get -u github.com/davidsneighbour/hugo-pwa
+hugo mod get -u github.com/davidsneighbour/github.com/davidsneighbour/hugo-pwa
 # update to a specific version
-hugo mod get -u github.com/davidsneighbour/hugo-pwa@v1.0.0
+hugo mod get -u github.com/davidsneighbour/github.com/davidsneighbour/hugo-pwa@v1.0.0
 # update all modules recursively over the whole project
 hugo mod get -u ./...
 ```
