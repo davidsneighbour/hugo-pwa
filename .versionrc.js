@@ -3,7 +3,7 @@ const defaultStandardVersion = require("@davidsneighbour/standard-version-config
 const localStandardVersion = {
   bumpFiles: [
     ...defaultStandardVersion.bumpFiles,
-    { filename: "data/dnb/pwa/version.json", type: "json" },
+    { filename: "data/dnb/pwa/build.json", type: "json" },
   ],
 };
 
