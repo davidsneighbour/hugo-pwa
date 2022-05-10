@@ -11,7 +11,7 @@ import { precacheAndRoute, matchPrecache } from 'workbox-precaching';
 import Data from "../../package.json";
 
 setCacheNameDetails({
-  prefix: "dnb-org-pwa",
+  prefix: "davidsneighbour-hugo-pwa",
   suffix: Data.version,
 });
 
