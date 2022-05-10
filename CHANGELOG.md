@@ -2,6 +2,28 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.1](https://github.com/davidsneighbour/hugo-pwa/compare/v0.2.0...v0.2.1) (2022-05-10)
+
+
+### Bug Fixes
+
+* change cache name ([706123e](https://github.com/davidsneighbour/hugo-pwa/commit/706123e8eccd12b134f89b2edfe91d4332aab986))
+
+
+### Chore
+
+* **config:** set dependabot to monthly updates ([3d06c50](https://github.com/davidsneighbour/hugo-pwa/commit/3d06c50848ed68418da0c432b060bf03031cf129))
+* **config:** update clean configuration ([c8b9fd5](https://github.com/davidsneighbour/hugo-pwa/commit/c8b9fd578241eda0bc8ee79d576be3a27f4c914c))
+* **deps:** update dependencies ([210b834](https://github.com/davidsneighbour/hugo-pwa/commit/210b83415019bcd2112a36e318e8d4a78fa7fb05))
+
+
+### Build System
+
+* **fix:** update build scripts ([4c9142b](https://github.com/davidsneighbour/hugo-pwa/commit/4c9142b98f5de1e19d6b46e78e499833bc228041))
+* rebuild assets ([c255771](https://github.com/davidsneighbour/hugo-pwa/commit/c255771a8ee802fe13ed93328a8847c2a25640b0))
+* rebuild assets ([9984570](https://github.com/davidsneighbour/hugo-pwa/commit/9984570a58ed129d8ef17c6869665a80ca45a4dc))
+* update Github organization name & use newer NPM dependencies ([#78](https://github.com/davidsneighbour/hugo-pwa/issues/78)) ([33cdc55](https://github.com/davidsneighbour/hugo-pwa/commit/33cdc559e99239de7b04933c25f584fbd93cd21f))
+
 ## [0.2.0](https://github.com/davidsneighbour/hugo-pwa/compare/v0.1.6...v0.2.0) (2022-04-07)
 
 
