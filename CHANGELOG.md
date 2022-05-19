@@ -2,6 +2,42 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.5](https://github.com/davidsneighbour/hugo-pwa/compare/v0.2.0...v0.2.5) (2022-05-19)
+
+
+### Bug Fixes
+
+* change cache name ([706123e](https://github.com/davidsneighbour/hugo-pwa/commit/706123e8eccd12b134f89b2edfe91d4332aab986))
+* use baseURL for start_url parameter in the manifest ([b78778a](https://github.com/davidsneighbour/hugo-pwa/commit/b78778a8ede6e2d1e0b482abbb1681ee7f258c8e))
+
+
+### Build System
+
+* **deps:** bump ejs from 3.1.6 to 3.1.7 ([#80](https://github.com/davidsneighbour/hugo-pwa/issues/80)) ([133bffe](https://github.com/davidsneighbour/hugo-pwa/commit/133bffe92dffa32e5b93d27b22c15621c5385f7e))
+* **fix:** check if go.sum exists before adding it ([ba630b8](https://github.com/davidsneighbour/hugo-pwa/commit/ba630b80b27f53e1ddefe0831d8572cff74af9f9))
+* **fix:** update build scripts ([4c9142b](https://github.com/davidsneighbour/hugo-pwa/commit/4c9142b98f5de1e19d6b46e78e499833bc228041))
+* rebuild assets ([c255771](https://github.com/davidsneighbour/hugo-pwa/commit/c255771a8ee802fe13ed93328a8847c2a25640b0))
+* rebuild assets ([9984570](https://github.com/davidsneighbour/hugo-pwa/commit/9984570a58ed129d8ef17c6869665a80ca45a4dc))
+* update Github organization name & use newer NPM dependencies ([#78](https://github.com/davidsneighbour/hugo-pwa/issues/78)) ([33cdc55](https://github.com/davidsneighbour/hugo-pwa/commit/33cdc559e99239de7b04933c25f584fbd93cd21f))
+
+
+### Documentation
+
+* update dev docs ([8c62b95](https://github.com/davidsneighbour/hugo-pwa/commit/8c62b95a761695607828dfd2f70798afdcfd1248))
+
+
+### Chore
+
+* **config:** add data directory to module mounts ([096ed3a](https://github.com/davidsneighbour/hugo-pwa/commit/096ed3a5afde1fc13fa7c9d09466ee111630dbb2))
+* **config:** set dependabot to monthly updates ([3d06c50](https://github.com/davidsneighbour/hugo-pwa/commit/3d06c50848ed68418da0c432b060bf03031cf129))
+* **config:** update clean configuration ([c8b9fd5](https://github.com/davidsneighbour/hugo-pwa/commit/c8b9fd578241eda0bc8ee79d576be3a27f4c914c))
+* **config:** update Go version ([6d857a9](https://github.com/davidsneighbour/hugo-pwa/commit/6d857a9d4577c9dc70d8469321d971337c934423))
+* **deps:** update dependencies ([210b834](https://github.com/davidsneighbour/hugo-pwa/commit/210b83415019bcd2112a36e318e8d4a78fa7fb05))
+* **release:** v0.2.1 ([72193cd](https://github.com/davidsneighbour/hugo-pwa/commit/72193cd08eba1d4b259b16a97bccec5d2464e94e))
+* **release:** v0.2.2 ([4ec542b](https://github.com/davidsneighbour/hugo-pwa/commit/4ec542b613ffe315e3ead8d660e291f4f7b002eb))
+* **release:** v0.2.3 ([91a426a](https://github.com/davidsneighbour/hugo-pwa/commit/91a426afb074a17784c6c91584b14b6d15af41bb))
+* **release:** v0.2.4 ([2ee2022](https://github.com/davidsneighbour/hugo-pwa/commit/2ee2022cca3ad6d3cdf2b17f2b36f3f40acbe459))
+
 ### [0.2.4](https://github.com/davidsneighbour/hugo-pwa/compare/v0.2.0...v0.2.4) (2022-05-10)
 
 
