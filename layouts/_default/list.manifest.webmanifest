@@ -9,7 +9,6 @@ see
         "theme_color" "#ffffff"
         "background_color" "#ffffff"
         "display" "minimal-ui"
-        "start_url" site.BaseURL
         "description" site.Params.Description
       ) (site.Params.dnb.pwa | default dict)
 -}}
