@@ -90,7 +90,7 @@ define(['./workbox-36b4d269'], (function (workbox) { 'use strict';
    */
 
   workbox.precacheAndRoute([{
-    "url": "main.cfca3967c0692a89a980.js",
+    "url": "main.56e6bdaaa8871562ed91.js",
     "revision": null
   }], {});
 
