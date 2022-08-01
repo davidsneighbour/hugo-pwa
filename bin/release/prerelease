@@ -28,7 +28,7 @@ if test -f go.sum; then
 fi;
 
 npm run build
-git add static/sw-dev static-sw-prod
+git add static
 
 if test -f "$SCRIPTPATH"/replacements; then
   while read -ra __; do
