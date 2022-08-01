@@ -22,13 +22,13 @@
     "@davidsneighbour/standard-version-config": "^4.0.8",
     "@davidsneighbour/tools": "^4.0.9",
     "@davidsneighbour/webpack-config": "^4.0.7",
-    "workbox-cacheable-response": "^6.5.3",
-    "workbox-core": "^6.5.3",
-    "workbox-expiration": "^6.5.3",
-    "workbox-precaching": "^6.5.3",
-    "workbox-routing": "^6.5.3",
-    "workbox-strategies": "^6.5.3",
-    "workbox-webpack-plugin": "^6.5.3"
+    "workbox-cacheable-response": "^6.5.4",
+    "workbox-core": "^6.5.4",
+    "workbox-expiration": "^6.5.4",
+    "workbox-precaching": "^6.5.4",
+    "workbox-routing": "^6.5.4",
+    "workbox-strategies": "^6.5.4",
+    "workbox-webpack-plugin": "^6.5.4"
   },
   "scripts": {
     "build": "npm run build:dev && npm run build:prod",
