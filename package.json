@@ -18,10 +18,7 @@
     "yargs-parser": ">=21.1.1"
   },
   "devDependencies": {
-    "@davidsneighbour/browserslist-config": "^4.0.15",
-    "@davidsneighbour/standard-version-config": "^4.0.8",
-    "@davidsneighbour/tools": "^4.0.9",
-    "@davidsneighbour/webpack-config": "^4.0.7",
+    "@davidsneighbour/config": "^1.0.22",
     "workbox-cacheable-response": "^6.5.4",
     "workbox-core": "^6.5.4",
     "workbox-expiration": "^6.5.4",
@@ -48,7 +45,7 @@
   ],
   "remarkConfig": {
     "plugins": [
-      "@davidsneighbour/remark-config"
+      "@davidsneighbour/config/remark"
     ]
   },
   "slug": "hugo-pwa"
